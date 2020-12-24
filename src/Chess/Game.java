@@ -18,8 +18,8 @@ public class Game {
         this.movesPlayed = movesPlayed;
         this.currentTurn = currentTurn;
         this.status = status;
-        this.move = move;
-        this.board = board;
+        this.move = new Move();
+        this.board = new Board();
         players[0] = player1;
         players[1] = player2;
     }

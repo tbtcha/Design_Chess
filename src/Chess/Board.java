@@ -2,24 +2,28 @@ package Chess;
 
 import Pieces.*;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.Date;
 
 public class Board {
-    private Date creationDate;
+    private ZonedDateTime creationDate;
     private Box box;
     ArrayList<Piece> pieces = new ArrayList<Piece>();
+    ZonedDateTime now = ZonedDateTime.now();
 
-    public Board(Date creationDate) {
-        this.creationDate = creationDate;
+    public Board() {
+        this.creationDate = now;
         this.box = new Box(63,63);
     }
 
-    public Date getCreationDate() {
+    public ZonedDateTime getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(Date creationDate) {
+    public void setCreationDate(ZonedDateTime creationDate) {
         this.creationDate = creationDate;
     }
 

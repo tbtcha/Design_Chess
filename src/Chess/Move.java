@@ -18,6 +18,9 @@ public class Move {
         this.isCastlingMove = isCastlingMove;
     }
 
+    public Move() {
+    }
+
     public Box getStartBox() {
         return startBox;
     }
