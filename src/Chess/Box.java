@@ -10,7 +10,12 @@ public class Box {
     public Box(int x, int y) {
         this.x = x;
         this.y = y;
-        this.piece = new Piece(false);
+        this.piece = new Piece(false) {
+            @Override
+            public boolean canMove() {
+                return false;
+            }
+        };
     }
 
     public int getX() {
@@ -34,6 +39,11 @@ public class Box {
     }
 
     public void setPiece(Piece piece) {
-        this.piece = new Piece(false);
+        this.piece = new Piece(false) {
+            @Override
+            public boolean canMove() {
+                return false;
+            }
+        };
     }
 }

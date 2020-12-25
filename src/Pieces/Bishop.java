@@ -5,7 +5,7 @@ public class Bishop extends Piece{
         super(killed);
     }
 
-    boolean canMove(){
+    public boolean canMove(){
         return true;
     }
 }

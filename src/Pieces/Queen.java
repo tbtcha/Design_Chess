@@ -6,7 +6,7 @@ public class Queen extends Piece{
         super(killed);
     }
 
-    boolean canMove(){
+    public boolean canMove(){
         return true;
     }
 }

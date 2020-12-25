@@ -1,6 +1,6 @@
 package Pieces;
 
-public class Piece {
+public abstract class Piece {
     private boolean killed;
 
     public Piece(boolean killed) {
@@ -19,7 +19,5 @@ public class Piece {
         return true;
     }
 
-    boolean canMove(){
-        return true;
-    }
+    public abstract boolean canMove();
 }

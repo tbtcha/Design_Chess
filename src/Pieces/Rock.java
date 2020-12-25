@@ -5,7 +5,7 @@ public class Rock extends Piece{
         super(killed);
     }
 
-    boolean canMove(){
+    public boolean canMove(){
         return true;
     }
 }

@@ -16,7 +16,7 @@ public class King extends Piece{
         this.castlingDone = castlingDone;
     }
 
-    boolean canMove(){
+    public boolean canMove(){
         return true;
     }
 }
