@@ -46,7 +46,10 @@ public class Player extends Account{
     }
 
     public boolean isWhiteSide(){
-        return true;
+        if (whiteSide==true){
+            return true;
+        }
+        else return false;
     }
 
     public boolean isChecked(){
